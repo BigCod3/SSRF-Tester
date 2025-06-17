@@ -1,0 +1,6 @@
+{
+  "name": "ssrf-scanner-backend",
+  "devDependencies": {
+    "@caido/sdk-backend": "^0.48.0"
+  }
+}

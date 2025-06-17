@@ -1,0 +1,13 @@
+{
+  "name": "ssrf-scanner-project",
+  "private": true,
+  "scripts": {
+    "build": "caido-dev build",
+    "watch": "caido-dev watch"
+  },
+  "devDependencies": {
+    "@caido-community/dev": "^0.1.6",
+    "@caido/sdk-backend": "^0.48.0",
+    "typescript": "^5.0.0"
+  }
+}

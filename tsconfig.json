@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "target": "ESNext",
+      "module": "ESNext",
+      "moduleResolution": "bundler",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "esModuleInterop": true,
+      "strict": true,
+      "noEmit": true,
+      "skipLibCheck": true,
+      "baseUrl": ".",
+      "paths": {
+        "@caido/sdk-backend": ["./node_modules/@caido/sdk-backend"],
+        "@caido/sdk-frontend": ["./node_modules/@caido/sdk-frontend"]
+      }
+    },
+    "include": ["packages/**/*.ts"],
+    "exclude": ["node_modules"]
+  }

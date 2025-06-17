@@ -1,0 +1,29 @@
+{
+  "id": "ssrf-scanner",
+  "name": "SSRF Scanner",
+  "version": "4.2.0",
+  "description": "Detects SSRF vectors by analyzing and probing request bodies for URLs.",
+  "author": {
+    "name": "BigCod3"
+  },
+  "links": {},
+  "plugins": [
+    {
+      "id": "ssrf-scanner-backend",
+      "kind": "backend",
+      "name": "backend",
+      "entrypoint": "ssrf-scanner-backend/index.js",
+      "runtime": "javascript"
+    },
+    {
+      "id": "ssrf-scanner-frontend",
+      "kind": "frontend",
+      "name": "frontend",
+      "entrypoint": "ssrf-scanner-frontend/index.js",
+      "style": "ssrf-scanner-frontend/index.css",
+      "backend": {
+        "id": "ssrf-scanner-backend"
+      }
+    }
+  ]
+}
